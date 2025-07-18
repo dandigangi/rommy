@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Rommy</title>
+    <style>
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        html {
+          interpolate-size: allow-keywords;
+        }
+      }
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      canvas,
+      img,
+      picture,
+      svg,
+      video {
+        display: block;
+        max-width: 100%;
+      }
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        overflow-wrap: break-word;
+      }
+      p {
+        text-wrap: pretty;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-wrap: balance;
+      }
+      #__next,
+      #root {
+        isolation: isolate;
+      }
+    </style>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        padding: 23px;
+      }
+
+      .page {
+        margin: 0 auto;
+        max-width: 1200;
+      }
+
+      .content {
+        padding: 40px 0;
+      }
+
+      .content.home {
+        display: flex;
+      }
+
+      .roms-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Rommy</h1>
+        <h2>Game Emulator ROMs</h2>
+        <div class="search">
+          <form>
+            <input label="search" type="text" placeholder="Super Mario 64" />
+            <button>Search</button>
+          </form>
+        </div>
+      </header>
+      <div class="content home">
+        <div>
+          Game Systems
+          <ul>
+            <li><a href="#">Playstation 2</a></li>
+            <li><a href="#">Super Nintendo</a></li>
+            <li><a href="#">Nintendo DS</a></li>
+            <li><a href="#">Playstation</a></li>
+            <li><a href="#">Nintendo 64</a></li>
+            <li><a href="#">Nintendo Wii</a></li>
+          </ul>
+        </div>
+        <div class="roms-list">
+          <div class="rom">
+            <img src="https://placekeanu.com/350/415" />
+            <h3>ROM Name</h3>
+            <h4>Game System</h4>
+            <p>This is a description about a ROM or something.</p>
+          </div>
+          <div class="rom">
+            <img src="https://placekeanu.com/350/415" />
+            <h3>ROM Name</h3>
+            <h4>Game System</h4>
+            <p>This is a description about a ROM or something.</p>
+          </div>
+          <div class="rom">
+            <img src="https://placekeanu.com/350/415" />
+            <h3>ROM Name</h3>
+            <h4>Game System</h4>
+            <p>This is a description about a ROM or something.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Rommy © 2025</footer>
+    </div>
+  </body>
+</html>

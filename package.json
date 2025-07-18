@@ -9,7 +9,7 @@
     "docker:build": "./scripts/docker.sh build_docker",
     "docker:run": "./scriptsdocker.sh start_docker",
     "docker:stop": "./scripts/docker.sh stop_docker",
-    "start": "node index.js"
+    "start": "node --watch index.js"
   },
   "dependencies": {
     "express": "^5.1.0"

@@ -1,12 +1,12 @@
+const path = require('path')
 const express = require('express')
-const rommy = express()
-
+const APP = express()
 const APP_PORT = 3000
 
-rommy.get('/', (req, res) => {
-  res.send('hello world')
+APP.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, '/index.html'))
 })
 
-rommy.listen(APP_PORT || 3000, () => {
+APP.listen(APP_PORT || 3000, () => {
   console.log(`rommy started on port ${APP_PORT}`)
 })
