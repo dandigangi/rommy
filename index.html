@@ -67,6 +67,22 @@
         padding: 23px;
       }
 
+      .flex {
+        display: flex;
+      }
+
+      .flex-jsb {
+        justify-content: space-between;
+      }
+
+      .flex-jcc {
+        justify-content: center;
+      }
+
+      .flex-ae {
+        align-items: end;
+      }
+
       .page {
         margin: 0 auto;
         max-width: 1200;
@@ -76,13 +92,24 @@
         padding: 40px 0;
       }
 
-      .content.home {
-        display: flex;
+      .pagination {
+        padding: 33px 0;
       }
 
-      .roms-list {
-        display: flex;
-        justify-content: space-between;
+      .pagination ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .pagination li {
+        margin: 0 5px;
+      }
+
+      .pagination a {
+        background-color: #eee;
+        display: inline-block;
+        padding: 5px 10px;
       }
 
       .footer {
@@ -92,9 +119,11 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <h1>Rommy</h1>
-        <h2>Game Emulator ROMs</h2>
+      <header class="header flex flex-jsb flex-ae">
+        <div>
+          <h1>Rommy</h1>
+          <h2>Game Emulator ROMs</h2>
+        </div>
         <div class="search">
           <form>
             <input label="search" type="text" placeholder="Super Mario 64" />
@@ -102,9 +131,9 @@
           </form>
         </div>
       </header>
-      <div class="content home">
+      <div class="content flex">
         <div>
-          Game Systems
+          <strong>Game Systems</strong>
           <ul>
             <li><a href="#">Playstation 2</a></li>
             <li><a href="#">Super Nintendo</a></li>
@@ -115,23 +144,32 @@
           </ul>
         </div>
         <div class="roms-list">
-          <div class="rom">
-            <img src="https://placekeanu.com/350/415" />
-            <h3>ROM Name</h3>
-            <h4>Game System</h4>
-            <p>This is a description about a ROM or something.</p>
+          <div class="roms flex">
+            <div class="rom">
+              <img src="https://placekeanu.com/350/415" />
+              <h3>ROM Name</h3>
+              <h4>Game System</h4>
+              <p>This is a description about a ROM or something.</p>
+            </div>
+            <div class="rom">
+              <img src="https://placekeanu.com/350/415" />
+              <h3>ROM Name</h3>
+              <h4>Game System</h4>
+              <p>This is a description about a ROM or something.</p>
+            </div>
+            <div class="rom">
+              <img src="https://placekeanu.com/350/415" />
+              <h3>ROM Name</h3>
+              <h4>Game System</h4>
+              <p>This is a description about a ROM or something.</p>
+            </div>
           </div>
-          <div class="rom">
-            <img src="https://placekeanu.com/350/415" />
-            <h3>ROM Name</h3>
-            <h4>Game System</h4>
-            <p>This is a description about a ROM or something.</p>
-          </div>
-          <div class="rom">
-            <img src="https://placekeanu.com/350/415" />
-            <h3>ROM Name</h3>
-            <h4>Game System</h4>
-            <p>This is a description about a ROM or something.</p>
+          <div class="pagination flex flex-jcc">
+            <ul class="flex">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
           </div>
         </div>
       </div>
