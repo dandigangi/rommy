@@ -1,0 +1,17 @@
+{
+  "name": "rommy",
+  "version": "0.0.1",
+  "description": "Game emulator ROMs",
+  "main": "index.js",
+  "repository": "https://github.com/dandigangi/rommy",
+  "author": "dandigangi",
+  "scripts": {
+    "docker:build": "./scripts/docker.sh build_docker",
+    "docker:run": "./scriptsdocker.sh start_docker",
+    "docker:stop": "./scripts/docker.sh stop_docker",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
